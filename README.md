@@ -1,103 +1,52 @@
-````markdown
 # Qoryqpa — AI Legal Support Chatbot
 
-**Qoryqpa** is a web-based AI assistant that provides **free legal guidance** to people who cannot afford professional legal consultation.  
-It’s designed to help individuals who have experienced **fraud, injustice, or financial exploitation**, offering fast and accessible legal information in **Kazakh, Russian, and English**.
+**Qoryqpa** is a web-based AI assistant that provides free, quick legal guidance for people who cannot afford a lawyer. The bot supports Kazakh, Russian, and English and focuses on fraud, consumer rights, and basic procedural steps.
 
----
+## Mission
 
-## Project Mission
+Make legal information accessible and actionable for vulnerable users — anonymous, fast, and free.
 
-> _"Justice should not depend on income."_  
+## Key features
 
-Qoryqpa aims to close the gap between people in need of legal help and the information that can empower them.  
-The chatbot interprets users’ questions, provides legal insights, and guides them toward the right resources — all anonymously and for free.
+* AI-powered conversational guidance (multilingual: KZ / RU / EN)
+* Simple responsive UI (HTML, Bootstrap, JavaScript)
+* Backend integration with OpenAI for natural-language responses
+* Privacy-first: no user data retention; API key stored server-side
 
----
+## Tech stack
 
-## Tech Stack
+* Frontend: HTML, CSS, Bootstrap, JavaScript
+* Backend: Node.js + Express (OpenAI API integration)
+* Environment: `.env` for secrets (do **not** commit)
 
-- **Frontend:** HTML, CSS, Bootstrap 5, JavaScript  
-- **Backend / API:** OpenAI API (GPT-based chatbot integration)  
-- **Hosting:** GitHub Pages (planned)  
-- **Environment:** `.env` file for API key protection  
+## Quick start (local)
 
----
+1. Clone repo
+2. Create `.env` with `OPENAI_API_KEY=your_key`
+3. `npm install`
+4. `node server.js`
+5. Open `http://localhost:3000/chatbot.html`
 
-## Features
 
-- AI chatbot with multilingual support (Kazakh / Russian / English)  
-- Responsive Bootstrap interface  
-- User-friendly and minimalistic design  
-- Fast API interaction with clear legal-style responses  
-- Socially driven — built for public benefit, not profit  
+## Screenshots / Demo
 
----
 
-## Setup
 
-To run locally:
+## Future plans
 
-```bash
-# Clone the repository
-git clone https://github.com/cupofteain/Qoryqpa.git
-
-# Navigate to project directory
-cd Qoryqpa
-
-# Create your .env file
-echo "OPENAI_API_KEY=your_api_key_here" > .env
-
-# Open index.html in your browser
-open index.html
-````
-
----
-
-## Screenshots
-
-*(Add your screenshots here later)*
-Example structure:
-
-```
-/screenshots
-   ├── chatbot-interface.png
-   ├── qoryqpa-homepage.png
-   ├── multilingual-demo.png
-```
-
----
-
-## Live Demo
-
-Coming soon via **GitHub Pages**.
-
----
-
-## Future Plans
-
-* Add real-time lawyer directory integration
-* Build admin dashboard for verified legal experts
-* Improve AI accuracy with Kazakh legal dataset
-* Mobile app version (React Native)
-
----
+* Improve Kazakh legal accuracy with local datasets
+* Add verified lawyer directory & escalation flow
+* Deploy live demo (GitHub Pages / Render / Vercel)
 
 ## Author
 
-**Erkezhan Ramash**
-IT Professional | AI & Social Impact Enthusiast
-📍 Based in Kazakhstan
-📧 yerkezhaaan@mail.ru
-🌱 *Empowering justice through technology.*
+Erkezhan Ramash — IT professional focused on AI for social impact.
+(Contact / LinkedIn / Email)
+
+## License
+
+MIT
 
 ---
 
-## 🕊️ License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-```
-
+Want a version tailored to your GitHub repo description or a short one-line tagline for the repo header?
