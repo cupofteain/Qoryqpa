@@ -1,0 +1,216 @@
+/* 🌿 QORYQPA STYLE — Natural Pastel Theme */
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #f8f5f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 🧭 Навигация */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e8e2d9;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #6b705c;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #9b9b7a;
+}
+
+/* 🌸 Контейнер */
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem 1.5rem;
+}
+
+/* 🏠 About және Constitution беттеріндегі бөлімдер */
+.about-section,
+.constitution {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.about-section h1,
+.constitution h1 {
+  color: #6b705c;
+  margin-bottom: 1rem;
+}
+
+.about-section p,
+.constitution p {
+  margin-bottom: 1rem;
+}
+
+.about-card {
+  background-color: #f2eee9;
+  border-left: 6px solid #9b9b7a;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  margin: 1.5rem 0;
+}
+
+.about-card h2 {
+  margin-top: 0;
+  color: #6b705c;
+}
+
+/* 📜 Конституция баптары */
+.article {
+  background-color: #fff;
+  border: 1px solid #e0dcd5;
+  border-left: 6px solid #bcb8a3;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.article:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.article h2 {
+  color: #6b705c;
+  margin-top: 0;
+}
+
+/* 💬 Чат-бот беті */
+.chatbot-container h1 {
+  color: #6b705c;
+}
+
+.chat-box {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.bot-message,
+.user-message {
+  background-color: #f2eee9;
+  margin: 0.5rem 0;
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  width: fit-content;
+  max-width: 80%;
+}
+
+.bot-message {
+  background-color: #e8e2d9;
+  color: #333;
+}
+
+.user-message {
+  background-color: #d9cbbd;
+  align-self: flex-end;
+}
+
+.chat-input {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.chat-input button {
+  background-color: #9b9b7a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chat-input button:hover {
+  background-color: #7f7f63;
+}
+
+/* 🌾 Батырмалар */
+.btn-primary {
+  display: inline-block;
+  background-color: #9b9b7a;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #7f7f63;
+}
+
+/* 🦶 Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #e8e2d9;
+  color: #555;
+  margin-top: 2rem;
+}
+
+/* 📱 Адаптив */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .chat-box {
+    height: 400px;
+  }
+}

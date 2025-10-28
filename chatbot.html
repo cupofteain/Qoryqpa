@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="kk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Чат-бот | Qoryqpa</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">Qoryqpa</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Басты бет</a></li>
+        <li><a href="about.html">Біз туралы</a></li>
+        <li><a href="chatbot.html" class="active">Чат-бот</a></li>
+        <li><a href="constitution.html">Конституция</a></li>
+      </ul>
+    </nav>
+
+    <main class="container chatbot-container">
+      <h1>Qoryqpa Чат-бот</h1>
+      <p class="chat-intro">
+        Бұл бөлімде сіз жасанды интеллектке сұрақ қойып, құқықтық немесе
+        ақпараттық көмек ала аласыз.  
+        Мысалы: <em>“Егер мені алдаса, не істеуім керек?”</em>
+      </p>
+
+      <div class="chat-box">
+        <div class="messages" id="messages">
+          <div class="bot-message">
+            Сәлем! Мен Qoryqpa ботымын 🤖  
+            Сізге қандай көмек керек?
+          </div>
+        </div>
+
+        <div class="chat-input">
+          <input
+            type="text"
+            id="userInput"
+            placeholder="Сұрағыңызды жазыңыз..."
+          />
+          <button onclick="sendMessage()">Жіберу</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 Qoryqpa. Барлық құқықтар қорғалған.</p>
+    </footer>
+
+    <script>
+      function sendMessage() {
+        const input = document.getElementById("userInput");
+        const messages = document.getElementById("messages");
+        const userText = input.value.trim();
+
+        if (userText === "") return;
+
+        const userMessage = document.createElement("div");
+        userMessage.classList.add("user-message");
+        userMessage.textContent = userText;
+        messages.appendChild(userMessage);
+
+        const botMessage = document.createElement("div");
+        botMessage.classList.add("bot-message");
+
+        // Жауап үлгісі (позже заменим на AI)
+        if (userText.includes("алаяқ") || userText.includes("алда")) {
+          botMessage.textContent =
+            "Егер сіз алаяқтыққа тап болсаңыз, бірден полицияға хабарласыңыз және дәлелдерді сақтаңыз. Qoryqpa сізге қандай көмек керек екенін нақтылаңыз.";
+        } else if (userText.includes("сәлем")) {
+          botMessage.textContent = "Сәлеметсіз бе! Қалыңыз қалай?";
+        } else {
+          botMessage.textContent =
+            "Рахмет, сұрағыңызды қабылдадым. Бұл туралы қосымша мәліметті кейінірек толықтырамын 🌿";
+        }
+
+        messages.appendChild(botMessage);
+        input.value = "";
+        messages.scrollTop = messages.scrollHeight;
+      }
+    </script>
+  </body>
+  <script src="script.js"></script>
+</html>

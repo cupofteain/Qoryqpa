@@ -1,0 +1,31 @@
+HTML Tags Used (10):
+1. <nav> – navigation bar for switching between pages
+2. <div> – for layout and grouping content
+3. <h1> – main page headings
+4. <p> – paragraphs of text
+5. <ul> and <li> – lists for values and features
+6. <a> – hyperlinks to navigate between pages
+7. <footer> – page footer with copyright
+8. <button> – interactive buttons
+9. <img> – for images and icons
+10. <form> – used in chatbot page for user input
+
+CSS Selectors (5):
+1. body – for global font and background
+2. .navbar – for navigation styling
+3. h1 – to adjust heading color and size
+4. #chat-box – specific style for chatbot section
+5. .card – for styled content blocks
+
+CSS Properties (5):
+1. color – sets text color
+2. background-color – sets background
+3. font-family – sets font style
+4. margin – sets spacing between elements
+5. border-radius – for rounded corners
+
+Bootstrap:
+Used Bootstrap’s responsive navbar, container system, and button classes to make the site mobile-friendly and visually consistent.
+
+JavaScript:
+Used JavaScript to make the site interactive — chatbot responses on `chatbot.html` and dynamic content updates for fraud schemes on the homepage.
