@@ -1,51 +1,55 @@
 import express from "express";
 import cors from "cors";
-import dotenv from "dotenv";
-import OpenAI from "openai";
 import path from "path";
 import { fileURLToPath } from "url";
-
-dotenv.config();
+import fs from "fs";
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-// 🔹 Чтобы Express знал, где лежат html/css/js файлы
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-app.use(express.static(__dirname));
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
+// Папка public как корень статических файлов
+app.use(express.static(path.join(__dirname, "public")));
 
-// 🔹 API маршрут для общения с ботом
-app.post("/chat", async (req, res) => {
-  const { message } = req.body;
+// Загружаем справочник
+const faq = JSON.parse(fs.readFileSync(path.join(__dirname, "public", "army_faq.json"), "utf8"));
 
-  try {
-    const completion = await openai.chat.completions.create({
-      model: "gpt-4o-mini",
-      messages: [
-        { role: "system", content: "Сен Qoryqpa атты қазақша сөйлейтін заңгерлік көмекші ботсың. Адамдарға құқықтық, психологиялық және ақпараттық көмек бересің." },
-        { role: "user", content: message },
-      ],
-    });
+// История чата (можно хранить в памяти)
+const chatHistory = [];
 
-    const reply = completion.choices[0].message.content;
+// Функция поиска ответа по ключевым словам
+function getBotReply(message, lang) {
+    const text = message.toLowerCase();
+    for (const item of faq) {
+        if (item.keywords.some(k => text.includes(k))) {
+            return item.answer[lang] || item.answer["ru"];
+        }
+    }
+    return lang === "ru" ? "Извините, я пока не знаю, как ответить на это." :
+           lang === "kz" ? "Кешіріңіз, мен әлі қалай жауап беруді білмеймін." :
+           "Sorry, I don't know how to respond to that yet.";
+}
+
+// Обработка сообщений от пользователя
+app.post("/chat", (req, res) => {
+    const { message, language } = req.body;
+    if (!message) return res.status(400).json({ error: "Message is required" });
+
+    const lang = ["kz","ru","en"].includes(language) ? language : "ru";
+    const reply = getBotReply(message, lang);
+    chatHistory.push({ user: message, bot: reply });
+
     res.json({ reply });
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ error: "Қате пайда болды." });
-  }
 });
 
-// 🔹 Главная страница по умолчанию
+// Главная страница
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "index.html"));
+    res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
-app.listen(3000, () =>
-  console.log("✅ Qoryqpa server running on http://localhost:3000")
-);
+app.listen(3000, () => {
+    console.log("✅ Qoryqpa server running on http://localhost:3000");
+});

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="kk">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title data-text="siteTitle">Qoryqpa — Сен жалғыз емессің</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+        <style>
+            body {
+                margin: 0;
+                font-family: 'Inter', sans-serif;
+                background-color: #f8f5f0;
+                color: #333;
+                line-height: 1.6;
+            }
+
+            header {
+                background-color: #9b9b7a;
+                color: #fff;
+                padding: 1rem 2rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            header h1 {
+                font-weight: 600;
+                font-size: 1.5rem;
+            }
+
+            nav a {
+                color: #fff;
+                text-decoration: none;
+                margin-left: 1.5rem;
+                font-weight: 500;
+                transition: opacity 0.3s ease;
+            }
+
+            nav a:hover {
+                opacity: 0.8;
+            }
+
+            .language-selector {
+                margin-left: 1rem;
+                padding: 0.2rem 0.5rem;
+                border-radius: 6px;
+                border: none;
+                font-size: 0.9rem;
+            }
+
+            .hero {
+                text-align: center;
+                padding: 6rem 1.5rem;
+                background: linear-gradient(to bottom right, #f8f5f0, #d9cbbd);
+            }
+
+            .hero h2 {
+                font-size: 2.5rem;
+                color: #333;
+                margin-bottom: 1rem;
+            }
+
+            .hero p {
+                max-width: 600px;
+                margin: 0 auto;
+                font-size: 1.1rem;
+                color: #555;
+            }
+
+            .btn {
+                display: inline-block;
+                margin-top: 2rem;
+                padding: 0.9rem 2rem;
+                border: 2px solid #9b9b7a;
+                border-radius: 12px;
+                background-color: #fff;
+                color: #333;
+                font-weight: 600;
+                text-decoration: none;
+                transition: all 0.3s ease;
+            }
+
+            .btn:hover {
+                background-color: #9b9b7a;
+                color: #fff;
+            }
+
+            section {
+                padding: 4rem 2rem;
+                max-width: 1000px;
+                margin: auto;
+            }
+
+            .features {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+                gap: 2rem;
+            }
+
+            .feature {
+                background-color: #fff;
+                border-radius: 16px;
+                padding: 2rem;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .feature:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            }
+
+            footer {
+                text-align: center;
+                padding: 2rem;
+                background-color: #9b9b7a;
+                color: #fff;
+                font-size: 0.9rem;
+            }
+
+            .language-selector {
+                margin-left: 1rem;
+                padding: 0.6rem 1rem;
+                border-radius: 12px;
+                border: 2px solid #9b9b7a;
+                background-color: #fff;
+                color: #333;
+                font-weight: 600;
+                font-family: 'Inter', sans-serif;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            .language-selector:hover,
+            .language-selector:focus {
+                background-color: #9b9b7a;
+                color: #fff;
+                outline: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1 data-text="siteTitle">Qoryqpa</h1>
+            <nav>
+                <a href="#" data-text="home">Басты бет</a>
+                <a href="about.html" data-text="about">Біз туралы</a>
+                <a href="#" data-text="chat">Чат-бот</a>
+                <a href="#" data-text="constitution">Конституция</a>
+                <select id="languageSelector" class="language-selector">
+                    <option value="kz">Қазақша</option>
+                    <option value="ru">Русский</option>
+                    <option value="en">English</option>
+                </select>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <h2 data-text="heroTitle">Сен жалғыз емессің 💛</h2>
+            <p data-text="heroText">Qoryqpa — бұл заманауи онлайн-жоба, мұнда әр адам өз құқығын қорғай алады.
+                Біз құқықтық білімді баршаға қолжетімді етуге және азаматтарды алаяқтықтан қорғауға көмектесеміз.</p>
+            <a href="about.html" class="btn" data-text="heroBtn">Толығырақ</a>
+        </section>
+
+        <section>
+            <h3 style="text-align:center; color:#444; margin-bottom:2rem;" data-text="missionTitle">Біздің миссиямыз</h3>
+            <div class="features">
+                <div class="feature">
+                    <h4 data-text="feature1Title">🛡️ Алаяқтықтан қорғау</h4>
+                    <p data-text="feature1Text">Біз соңғы кибералаяқтық тәсілдері туралы ақпарат ұсынамыз және өзіңді қалай қорғау керегін үйретеміз.</p>
+                </div>
+                <div class="feature">
+                    <h4 data-text="feature2Title">🤖 AI-кеңесші</h4>
+                    <p data-text="feature2Text">Qoryqpa чат-боты — жасанды интеллект негізіндегі көмекші, ол сенің сұрақтарыңа нақты жауап береді.</p>
+                </div>
+                <div class="feature">
+                    <h4 data-text="feature3Title">📜 Конституция бәріне</h4>
+                    <p data-text="feature3Text">Біз Қазақстан Республикасының Конституциясын қарапайым тілмен, бөлімдерге бөліп ұсынамыз.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-text="footer">© 2025 Qoryqpa | Барлық құқықтар қорғалған</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
+ы

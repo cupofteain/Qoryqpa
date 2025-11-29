@@ -1,0 +1,133 @@
+[
+  {
+    "keywords": ["армия","военная служба","призыв","military","army","conscription"],
+    "question": {
+      "kz": "Әскери қызмет қалай жүзеге асырылады?",
+      "ru": "Как осуществляется военная служба?",
+      "en": "How is military service carried out?"
+    },
+    "answer": {
+      "kz": "Әскери қызмет — әр азаматтың конституциялық борышы. Конституция РК, 36‑бап; тәртібі мен мерзімі «О воинской обязанности и военной службе» заңы бойынша реттеледі.",
+      "ru": "Военная служба — конституционный долг гражданина. Конституция РК, ст. 36; порядок и сроки службы регулируются Законом «О воинской обязанности и военной службе».",
+      "en": "Military service is the constitutional duty of every citizen. Constitution of the Republic of Kazakhstan, Article 36; the procedure and terms are regulated by the Law «On Military Duty and Military Service»."
+    }
+  },
+  {
+    "keywords": ["срок службы","длительность","term of service","duration"],
+    "question": {
+      "kz": "Әскери қызметтің мерзімі қанша?",
+      "ru": "Сколько длится срочная служба?",
+      "en": "What is the length of military service?"
+    },
+    "answer": {
+      "kz": "Әскери қызмет мерзімі әскер түріне және жарамдылық категориясына байланысты. «О воинской обязанности и военной службе» заңы 5‑6‑баптарда көрсетілген.",
+      "ru": "Срок службы зависит от рода войск и категории годности. Закон «О воинской обязанности и военной службе», ст. 5‑6.",
+      "en": "The length of military service depends on the type of troops and fitness category. Law «On Military Duty and Military Service», Articles 5‑6."
+    }
+  },
+  {
+    "keywords": ["медкомиссия","категория годности","здоровье","medical commission","fitness","health"],
+    "question": {
+      "kz": "Әскери қызметке жарамдылық қалай анықталады?",
+      "ru": "Как определяется годность к военной службе?",
+      "en": "How is fitness for military service determined?"
+    },
+    "answer": {
+      "kz": "Годность әскери‑медициналық комиссияның қорытындысына байланысты. Категориялар «О воинской обязанности и военной службе» заңы бойынша анықталады.",
+      "ru": "Годность к службе определяется военно‑медицинской комиссией. Категории годности регулируются Законом «О воинской обязанности и военной службе».",
+      "en": "Fitness for service is determined by the military medical commission. Fitness categories are defined by the Law «On Military Duty and Military Service»."
+    }
+  },
+  {
+    "keywords": ["отсрочка","отложка","deferral","deferment"],
+    "question": {
+      "kz": "Әскерден кейінге қалдыруға бола ма?",
+      "ru": "Можно ли получить отсрочку от службы?",
+      "en": "Can I get a deferral from military service?"
+    },
+    "answer": {
+      "kz": "Отсрочка заңмен белгіленген жағдайларда беріледі: оқу, денсаулық, отбасы жағдайлары. «О воинской обязанности и военной службе» 10‑бап.",
+      "ru": "Отсрочка предоставляется по закону: учеба, здоровье, семейные обстоятельства. Закон «О воинской обязанности и военной службе», ст. 10.",
+      "en": "Deferrals are granted by law: education, health, family circumstances. Law «On Military Duty and Military Service», Article 10."
+    }
+  },
+  {
+    "keywords": ["штраф","наказание","нарушение","penalty","fine","violation"],
+    "question": {
+      "kz": "Әскерден жалтарған жағдайда не болады?",
+      "ru": "Что будет за уклонение от службы?",
+      "en": "What happens if one evades military service?"
+    },
+    "answer": {
+      "kz": "Әскери қызметтен жалтару заң бойынша жауапкершілікке тартылады. «О воинской обязанности и военной службе» 25‑бап.",
+      "ru": "Уклонение от службы влечет ответственность по закону. Закон «О воинской обязанности и военной службе», ст. 25.",
+      "en": "Evasion of military service entails legal liability. Law «On Military Duty and Military Service», Article 25."
+    }
+  },
+  {
+    "keywords": ["военный билет","documents","passport","military ID"],
+    "question": {
+      "kz": "Әскерге шақыру үшін қандай құжаттар қажет?",
+      "ru": "Какие документы нужны для призыва в армию?",
+      "en": "What documents are required for conscription?"
+    },
+    "answer": {
+      "kz": "Құжаттар: төлқұжат, приписное куәлік немесе әскери билет, медициналық анықтама. «О воинской обязанности и военной службе» заңы 7‑бап.",
+      "ru": "Документы: паспорт, приписное свидетельство или военный билет, медицинская справка. Закон «О воинской обязанности и военной службе», ст. 7.",
+      "en": "Documents: passport, registration certificate or military ID, medical certificate. Law «On Military Duty and Military Service», Article 7."
+    }
+  },
+  {
+    "keywords": ["жалоба","военкомат","complaint","military commissariat"],
+    "question": {
+      "kz": "Әскери комиссариатқа шағым қалай беруге болады?",
+      "ru": "Как подать жалобу на военкомат?",
+      "en": "How can I file a complaint against the military commissariat?"
+    },
+    "answer": {
+      "kz": "Шағымды жоғары әскери комиссариатқа, прокуратураға немесе мемлекеттік қызмет порталы арқылы беруге болады. «О воинской обязанности и военной службе» 9‑бап.",
+      "ru": "Жалобу можно подать в вышестоящий военный комиссариат, прокуратуру или через портал госуслуг. Закон «О воинской обязанности и военной службе», ст. 9.",
+      "en": "A complaint can be filed to the higher military commissariat, the prosecutor's office, or via the government services portal. Law «On Military Duty and Military Service», Article 9."
+    }
+  },
+  {
+    "keywords": ["контракт","военная служба по контракту","contract service"],
+    "question": {
+      "kz": "Әскери қызметке келісімшарт бойынша баруға болады ма?",
+      "ru": "Можно ли служить по контракту?",
+      "en": "Is it possible to serve under contract?"
+    },
+    "answer": {
+      "kz": "Иә, келісімшарт бойынша қызметке кіруге болады. «О воинской обязанности и военной службе» 15‑бап.",
+      "ru": "Да, возможна служба по контракту. Закон «О воинской обязанности и военной службе», ст. 15.",
+      "en": "Yes, it is possible to serve under a contract. Law «On Military Duty and Military Service», Article 15."
+    }
+  },
+  {
+    "keywords": ["резерв","запас","reserve","backup forces"],
+    "question": {
+      "kz": "Әскери резерв деген не?",
+      "ru": "Что такое военный резерв?",
+      "en": "What is the military reserve?"
+    },
+    "answer": {
+      "kz": "Әскери қызметтен өткен азаматтар резервте тіркеледі. «О воинской обязанности и военной службе» 20‑бап.",
+      "ru": "Граждане, прошедшие службу, состоят в резерве. Закон «О воинской обязанности и военной службе», ст. 20.",
+      "en": "Citizens who have completed service are registered in the reserve. Law «On Military Duty and Military Service», Article 20."
+    }
+  },
+  {
+    "keywords": ["учения","военная подготовка","training","exercises"],
+    "question": {
+      "kz": "Резервтегі азаматтарға әскери дайындық міндетті ме?",
+      "ru": "Обязательна ли военная подготовка для резервистов?",
+      "en": "Is military training mandatory for reservists?"
+    },
+    "answer": {
+      "kz": "Иә, резервтегі азаматтар үшін әскери дайындық міндетті. «О воинской обязанности и военной службе» 22‑бап.",
+      "ru": "Да, военная подготовка обязательна для граждан запаса. Закон «О воинской обязанности и военной службе», ст. 22.",
+      "en": "Yes, military training is mandatory for reservists. Law «On Military Duty and Military Service», Article 22."
+    }
+  }
+]
+

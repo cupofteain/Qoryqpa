@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-text="aboutTitle">Біз туралы | Qoryqpa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">Qoryqpa</div>
+    <ul class="nav-links">
+        <li><a href="index.html" data-text="home">Басты бет</a></li>
+        <li><a href="about.html" class="active" data-text="about">Біз туралы</a></li>
+        <li><a href="chatbot.html" data-text="chat">Чат-бот</a></li>
+        <li><a href="constitution.html" data-text="constitution">Конституция</a></li>
+    </ul>
+    <select id="languageSelector" class="language-selector">
+        <option value="kz">Қазақша</option>
+        <option value="ru">Русский</option>
+        <option value="en">English</option>
+    </select>
+</nav>
+
+<main class="container">
+    <section class="about-section">
+        <h1 data-text="aboutTitle">Біз туралы</h1>
+        <p data-text="aboutText">Qoryqpa — бұл адамдарға өз құқықтарын білуге...</p>
+
+        <div class="about-card">
+            <h2 data-text="aboutMissionTitle">Миссиямыз</h2>
+            <p data-text="aboutMissionText">Әр азамат өз құқығын білуге және өзін қорғауға лайық...</p>
+        </div>
+
+        <a href="chatbot.html" class="btn-primary" data-text="aboutBtn">Чат-ботқа өту</a>
+    </section>
+</main>
+
+<footer class="footer">
+    <p data-text="footer">© 2025 Qoryqpa. Барлық құқықтар қорғалған.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
